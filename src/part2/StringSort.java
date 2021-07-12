@@ -1,10 +1,10 @@
 package part2;
 
 public class StringSort {
-    private String o = "abcdefg";
-    private String a = "abcdef";
+    public String o = "abcdefg";
+    public String a = "abcdef";
 
-    String middleStringElemDivisible(String a){
+    public String middleStringElemDivisible(String a){
         char [] chars = a.toCharArray();
         String b = null;
             if (chars.length % 2 ==0){
@@ -20,7 +20,7 @@ public class StringSort {
         return b;
     }
 
-    String arrayReplacing(String a){
+    public String arrayReplacing(String a){
         char [] chars = a.toCharArray();
         String k,m,z,w;
         String b = null;
@@ -39,15 +39,5 @@ public class StringSort {
             b = w+ m + z;
         }
         return b;
-    }
-
-
-
-    public static void main(String[] args) {
-        StringSort stringSort = new StringSort();
-        System.out.println(stringSort.middleStringElemDivisible(stringSort.a));
-        System.out.println(stringSort.middleStringElemDivisible(stringSort.o));
-        System.out.println(stringSort.arrayReplacing(stringSort.a));
-        System.out.println(stringSort.arrayReplacing(stringSort.o));
     }
 }
