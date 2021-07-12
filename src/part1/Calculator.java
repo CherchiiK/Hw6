@@ -1,3 +1,5 @@
+package part1;
+
 public class Calculator {
     private int [] myArray = new int[4];
     int plus(int a,int b){
