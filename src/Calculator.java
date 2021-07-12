@@ -4,6 +4,10 @@ public class Calculator {
         return a + b;
     }
 
+    double multiply(double a,double b){
+        return a * b;
+    }
+
     int plus(int [] myArray) {
         int sum = 0;
         for (int j : myArray) {
